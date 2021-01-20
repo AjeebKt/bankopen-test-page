@@ -56,7 +56,7 @@
     padding: 100px 20px;
   }
   .fx-box {
-    flex-flow: column;
+    // flex-flow: column;
     .right {
       padding-bottom: 50px;
     }
@@ -64,7 +64,20 @@
 }
 
 @media only screen and (max-width: 1023px) {
+  .left {
+    flex-flow: column;
+    padding: 100px 20px;
+  }
   .img-right {
     display: none;
+  }
+  .fx-box {
+    flex-flow: column;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .left {
+    padding: 100px 0px;
   }
 }

@@ -186,3 +186,17 @@ input[type="range"]::-webkit-slider-thumb {
     background: #663399;
   }
 }
+
+@media only screen and (max-width: 1023px) and (min-width: 767px) {
+  .fx-container {
+    margin: 0px 10px 100px 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .fx-container {
+    margin-top: 0;
+    margin-right: 0;
+    padding: 5px;
+  }
+}

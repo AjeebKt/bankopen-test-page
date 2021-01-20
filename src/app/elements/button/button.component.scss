@@ -13,6 +13,7 @@ button {
   &.outlined {
     border: 2px solid var(--purple);
     background-color: transparent;
+    transition: all 0.3s ease;
   }
   &.filled {
     background: linear-gradient(90deg, #9f62c9 0, #663399 100%);
@@ -20,6 +21,7 @@ button {
     color: #fff;
   }
   &.white {
+    transition: all 0.3s ease;
     background: #fff;
     border: none;
     color: var(--purple);
