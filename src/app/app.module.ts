@@ -8,6 +8,7 @@ import { MainComponent } from './main/main.component';
 import { FeaturesComponent } from './features/features.component';
 import { CardComponent } from './elements/card/card.component';
 import { ButtonComponent } from './elements/button/button.component';
+import { EligibilityCalculatorComponent } from './elements/eligibility-calculator/eligibility-calculator.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ButtonComponent } from './elements/button/button.component';
     MainComponent,
     FeaturesComponent,
     CardComponent,
-    ButtonComponent
+    ButtonComponent,
+    EligibilityCalculatorComponent
   ],
   imports: [
     BrowserModule,

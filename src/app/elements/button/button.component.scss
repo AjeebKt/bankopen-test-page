@@ -19,6 +19,11 @@ button {
     border: none;
     color: #fff;
   }
+  &.white {
+    background: #fff;
+    border: none;
+    color: var(--purple);
+  }
   &:hover,
   :focus {
     background: var(--purple-dark);

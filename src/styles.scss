@@ -64,3 +64,9 @@ body {
     margin: 5px 60px;
   }
 }
+
+@media only screen and (max-width: 1023px) {
+  .section-header {
+    font-size: 30px;
+  }
+}

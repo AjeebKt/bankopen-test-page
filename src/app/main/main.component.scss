@@ -2,13 +2,13 @@
   position: relative;
   overflow: hidden;
 }
-.img-left {
+.img-right {
   position: absolute;
   right: -200px;
   top: -340px;
   transform: scale(0.8);
 }
-.img-right {
+.img-left {
   position: absolute;
   top: 100px;
   left: -150px;
@@ -41,5 +41,30 @@
     bottom: -28px;
     right: -105px;
     z-index: -999;
+  }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1023px) {
+  .left {
+    padding: 100px 20px;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 767px) {
+  .left {
+    flex-flow: column;
+    padding: 100px 20px;
+  }
+  .fx-box {
+    flex-flow: column;
+    .right {
+      padding-bottom: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .img-right {
+    display: none;
   }
 }
