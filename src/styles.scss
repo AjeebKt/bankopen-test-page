@@ -44,3 +44,23 @@ body {
   padding: 0;
   outline: none;
 }
+
+.section-header {
+  font-family: "Montserrat-Medium";
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.divider {
+  margin: 34px 0;
+  height: 6px;
+  width: 120px;
+  background: #707070;
+  border-radius: 50px;
+  margin: 22px 0;
+  &.black {
+    background: #222222;
+    width: 236px;
+    margin: 5px 60px;
+  }
+}

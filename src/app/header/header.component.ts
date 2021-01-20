@@ -14,10 +14,14 @@ export class HeaderComponent implements OnInit {
 
   @HostListener('window:scroll')
   onWindowScroll() {
+    console.log('jabaaaaa');
+
     this.navFixed = (window.pageYOffset
       || document.documentElement.scrollTop
       || document.body.scrollTop || 0
     ) > this.scrollOffset;
+    console.log(this.navFixed);
+
   }
 
   ngOnInit(): void {
