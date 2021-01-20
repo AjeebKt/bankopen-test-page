@@ -9,6 +9,7 @@ import { FeaturesComponent } from './features/features.component';
 import { CardComponent } from './elements/card/card.component';
 import { ButtonComponent } from './elements/button/button.component';
 import { EligibilityCalculatorComponent } from './elements/eligibility-calculator/eligibility-calculator.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { EligibilityCalculatorComponent } from './elements/eligibility-calculato
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
