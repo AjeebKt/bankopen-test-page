@@ -5,13 +5,11 @@
     <form action="#" class="calc-form">
       <div class="form-field">
         <label for="">Monthly Income</label>
-
         <div class="slider-box">
           <h1>₹ {{monthlyIncome}}</h1>
           <input #incomeSlider name="monthlyIncome" type="range" [min]="incomeMin" [max]="incomeMax" value="100000"
             [(ngModel)]="monthlyIncome" (ngModelChange)="monthlyIncomeChange($event)"
-            [style.background]="'linear-gradient(to right, #efe313 0%, #212302 '+ incomePercent +'%, #f70707 ' + incomePercent + '%, #e60a0a  100%)'">
-
+            [style.background]="'linear-gradient(to right, #663399 0%, #663399 '+ incomePercent +'%, #e7daff ' + incomePercent + '%, #e7daff  100%)'">
           <div class="fx-between">
             <span>₹ 100000</span>
             <span>₹ 300000</span>
@@ -21,18 +19,16 @@
 
       <div class="form-field">
         <label for="">Monthly Expense</label>
-
         <div class="slider-box">
           <h1>₹ {{monthlyExpence}}</h1>
           <input #expenceSlider name="monthlyExpence" type="range" [min]="expenceMin" [max]="expenceMax" value="10000"
             [(ngModel)]="monthlyExpence" (ngModelChange)="monthlyExpenceChange($event)"
-            [style.background]="'linear-gradient(to right, #efe313 0%, #212302 '+ expencePercent +'%, #f70707 ' + expencePercent + '%, #e60a0a  100%)'">
+            [style.background]="'linear-gradient(to right, #663399 0%, #663399 '+ expencePercent +'%, #e7daff ' + expencePercent + '%, #e7daff  100%)'">
         </div>
       </div>
 
       <div class="form-field">
         <label for="">Repayment Teure</label>
-
         <div class="slider-box">
           <select name="repaymentTeure" id="repaymentTeure">
             <option value="3">3 Months</option>
@@ -45,7 +41,6 @@
 
       <div class="form-field fx-between">
         <label for="">Do you have any existing loans?</label>
-
         <div class="slider-box ">
           <div class="slide-wrapper">
             <input type="checkbox" id="test" />
@@ -56,33 +51,13 @@
 
       <div class="form-field">
         <label for="">EMI of existing loan (optional)</label>
-
         <div class="slider-box">
           <input type="text" name="emi" id="emi" placeholder="₹ 15000">
         </div>
       </div>
-
-      <!-- <div class="">
-        <input #slider2 name="monthlyExpence" type="range" [min]="expenceMin" [max]="expenceMax" value="0"
-          [(ngModel)]="monthlyExpence"
-          [style.background]="'linear-gradient(to right, #663399 0%, #663399 '+ (100*slider2.value)/(expenceMin+expenceMax) +'%, #e7daff ' + slider.value + '%, #e7daff  100%)'">
-        {{slider2.value}}
-      </div> -->
     </form>
+
   </div>
-
-
-  <!-- 'linear-gradient(to right, var(--purple) 0%, var(--purple)' + strokeWidth + '%, #e7daff 50%, #e7daff 100%);' -->
-
-
-
-
-
-
-
-
-
-
 
   <div class="fx-result box">
     <h3>Loan Amount</h3>
@@ -92,5 +67,7 @@
     <div class="btn-box">
       <app-button [type]="'button'" [text]="'Get Money'" [className]="'white'"></app-button>
     </div>
-  </div><img src="assets/images/accounting_dots.svg" alt="accounting_dots" class="accounting_dots">
+  </div>
+
+  <img src="assets/images/accounting_dots.svg" alt="accounting_dots" class="accounting_dots">
 </div>

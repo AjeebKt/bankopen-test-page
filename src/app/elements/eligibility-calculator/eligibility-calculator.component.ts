@@ -21,16 +21,10 @@ export class EligibilityCalculatorComponent implements OnInit {
   }
 
   monthlyIncomeChange(e) {
-
-    this.incomePercent = (100 * e) / (this.incomeMin + this.incomeMax);
-    // console.log((100 * e) / (this.incomeMin + this.incomeMax));
-
+    this.incomePercent = (100 * (e - this.incomeMin)) / (this.incomeMax - this.incomeMin);
   }
 
   monthlyExpenceChange(e) {
-
-    this.expencePercent = (100 * e) / (this.expenceMin + this.expenceMax);
-    // console.log((100 * e) / (this.incomeMin + this.incomeMax));
-
+    this.expencePercent = (100 * (e - this.expenceMin)) / (this.expenceMax - this.expenceMin);
   }
 }
